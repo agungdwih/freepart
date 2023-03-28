@@ -12,4 +12,5 @@
 Username: admin@gmail.com
 Password: 123123123
 
+phpMyAdmin 5.2.0
 PHP 8.1.10
