@@ -40,13 +40,6 @@ Route::middleware(['auth', 'admin'])->group(function () {
     Route::get('chart', [RiwayatController::class, 'chart']);    
 });
 
-Route::middleware(['auth', 'Boss'])->group(function () {
-    Route::resource('driver', DriverController::class);
-    Route::resource('kendaraan', KendaraanController::class);
-    Route::resource('aktivitas', AktivitasController::class);
-    Route::get('status/{riwayat}', [RiwayatController::class, 'status']);
-    Route::get('export', [SewaController::class, 'export']);
-    Route::get('chart', [RiwayatController::class, 'chart']);    
-});
+
 Auth::routes();
 
